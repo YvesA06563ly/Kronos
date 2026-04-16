@@ -1,4 +1,4 @@
-<div align="center">
+# <div align="center">
   <h2><b>Kronos: A Foundation Model for the Language of Financial Markets </b></h2>
 </div>
 
@@ -48,6 +48,8 @@
 
 > **Personal note:** I'm exploring this model for crypto market analysis (BTC/ETH daily candles).
 > Will update this fork with any findings or experiment scripts.
+> 
+> **TODO:** Test inference on Binance BTC/USDT 1d data and compare prediction accuracy vs. a simple baseline.
 
 </div>
 
@@ -63,10 +65,3 @@
 **Kronos** is a family of decoder-only foundation models, pre-trained specifically for the "language" of financial markets—K-line sequences. Unlike general-purpose TSFMs, Kronos is designed to handle the unique, high-noise characteristics of financial data. It leverages a novel two-stage framework: 
 1. A specialized tokenizer first quantizes continuous, multi-dimensional K-line data (OHLCV) into **hierarchical discrete tokens**. 
 2. A large, autoregressive Transformer is then pre-trained on these tokens, enabling it to serve as a unified model for diverse quantitative tasks.
-
-<p align="center">
-    <img src="figures/overview.png" alt="" align="center" width="700px" />
-</p>
-
-## ✨ Live Demo 
-We have set up a live demo to visualize Kronos
