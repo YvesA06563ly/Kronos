@@ -49,7 +49,10 @@
 > **Personal note:** I'm exploring this model for crypto market analysis (BTC/ETH daily candles).
 > Will update this fork with any findings or experiment scripts.
 > 
-> **TODO:** Test inference on Binance BTC/USDT 1d data and compare prediction accuracy vs. a simple baseline.
+> **TODO:**
+> - [ ] Test inference on Binance BTC/USDT 1d data and compare prediction accuracy vs. a simple baseline.
+> - [ ] Try fine-tuning on ETH/USDT 4h candles to see if shorter timeframes benefit from adaptation.
+> - [ ] Benchmark against a naive last-value baseline and a simple moving average.
 
 </div>
 
@@ -64,4 +67,4 @@
 
 **Kronos** is a family of decoder-only foundation models, pre-trained specifically for the "language" of financial markets—K-line sequences. Unlike general-purpose TSFMs, Kronos is designed to handle the unique, high-noise characteristics of financial data. It leverages a novel two-stage framework: 
 1. A specialized tokenizer first quantizes continuous, multi-dimensional K-line data (OHLCV) into **hierarchical discrete tokens**. 
-2. A large, autoregressive Transformer is then pre-trained on these tokens, enabling it to serve as a unified model for diverse quantitative tasks.
+2. A large, autoregressive Transf
